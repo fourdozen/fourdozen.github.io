@@ -5,25 +5,33 @@
     <title >Timur's Photos</title>
     <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/81/national-park_1f3de.png">
 
-    <style>
+    <style> 
         img {
-        display: block;
-        padding: 75px;
-        height: 800px;
-        margin-left: auto;
-        margin-right: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 85vh;
+            padding: 50px 0px 50px 0px;
+        }
+
+        .image_conatiner {
+            display: block;
+            height: auto;
+            margin-left:auto;
+            margin-right:auto;
         }
 
         #heading {
             margin: auto;
             font-family: 'Garamond';
             text-align: center;
-            padding: 50px;
+            padding: 50px 0px 0px 0px;
+            font-size: 100px;
+
         }
 
         p {
             margin: auto;
-            font-family: 'Garamond';
             padding: 0px 0px 0px 0px;
             text-align: center;
         }
@@ -32,27 +40,64 @@
             text-align: center;
             padding: 60px;
         }
+
+        .image_caption {
+            text-align: center;
+            font-style: italic;
+        }
+
+        body {
+            background-color: #eeeee4;
+            font-family: 'Garamond';
+            color: #505050;
+        }
+
     </style>
 </head>
 
     <body>
         <h1 id='heading'>Photos</h3>
-        <div id='images' style="margin: auto;">
+        
+        <div id='images' style="margin: auto;"> 
+        <div class="image_container">
             <img src="img/summer_camp.jpg" alt='pic 1' class='h'>
+            <p class="image_caption">Russia, Kodak Gold 200</p>
+        </div>
         <br>
+        <div class="image_container">
             <img src="img/monastery.jpg" alt='pic 2' class='h'>
+            <p class="image_caption">Russia, Kodak Gold 200</p>
+        </div>
         <br>
+        <div class="image_container">
             <img src="img/santa_monica.jpg" alt='pic 3' class='v'>
+            <p class="image_caption">Santa Monica, Kodak Gold 200</p>
+        </div>
         <br>
+        <div class="image_container">
             <img src="img/parakeet.jpg" alt='pic 4' class='v'>
+            <p class="image_caption">London, Kodak Gold 200</p>
+        </div>
         <br>
+        <div class="image_container">
             <img src="img/griffith.jpg" alt='pic 5' class='h'>
+            <p class="image_caption">Los Angeles, Kodak Gold 200</p>
+        </div>
         <br>
+        <div class="image_container">
             <img src="img/kensington_roundabout.jpg" alt='pic 6' class='v'>
+            <p class="image_caption">London, Kodak Portra 400</p>
+        </div>
         <br>
+        <div class="image_container">
             <img src="img/canal_bridge.jpg" alt='pic 7' class='v'>
+            <p>London, Ilford HP5 Plus</p>
+        </div>
         <br>
+        <div class="image_container">
             <img src="img/windsurfer_evening.jpg" alt="pic 8" class='h'>
+            <p>Sardinia, Kodak Colorplus 200</p>
+        </div>
         </div>
 
     <div>
