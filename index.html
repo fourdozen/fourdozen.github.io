@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
     
     <style> 
-        img {
+        .image_container img {
             display: block;
             margin-left: auto;
             margin-right: auto;
             max-height: calc(100vh - 150px);
             padding: 50px 50px 25px 50px;
-            max-width: 100vw;
+            max-width: calc(100vh - 100px);
         }
 
         .image_container {
@@ -23,7 +23,7 @@
             margin-left:auto;
             margin-right:auto;
             height: 100vh;
-            width: 100%;
+            width: auto;
         }
 
         #heading {
@@ -36,13 +36,17 @@
         }
 
         #images {
-            padding: 0px 0px 100px 0px;
+            padding: 0px 0px 0px 0px;
         }
 
         p {
             margin: auto;
             padding: 0px 0px 0px 0px;
             text-align: center;
+        }
+
+        html {
+        scroll-behavior: smooth;
         }
 
         #arms {
@@ -61,55 +65,75 @@
             color: #505050;
         }
 
+        a {
+            color: inherit;
+        }
+
+        #final_container {
+            max-height: 100vh;
+            max-width: 100%;
+        }
+
+        #final {
+            width: auto;
+            height: auto;
+            padding: 0px;
+        }
+        #endtext {
+            padding: 50px 0px 0px 0px;
+        }
     </style>
 </head>
 
     <body>
         <h1 id='heading'>TIMUR'S PHOTOS</h3>
         
+
         <div id='images' style="margin: auto;"> 
-        <div class="image_container">
+        <div id='1' class="image_container">
             <img src="img/summer_camp.jpg" alt='pic 1' class='h'>
-            <p class="image_caption">Russia, Kodak Gold 200</p>
+            <p class="image_caption">Russia, Kodak Gold 200<br><a href="#2">Next</a></p>
         </div>
         <br>
-        <div class="image_container">
+        <div id='2' class="image_container">
             <img src="img/monastery.jpg" alt='pic 2' class='h'>
-            <p class="image_caption">Russia, Kodak Gold 200</p>
+            <p class="image_caption">Russia, Kodak Gold 200<br><a href="#3">Next</a></p>
         </div>
         <br>
-        <div class="image_container">
+        <div id='3' class="image_container">
             <img src="img/santa_monica.jpg" alt='pic 3' class='v'>
-            <p class="image_caption">Santa Monica, Kodak Gold 200</p>
+            <p class="image_caption">Santa Monica, Kodak Gold 200<br><a href="#4">Next</a></p>
         </div>
         <br>
-        <div class="image_container">
+        <div id='4' class="image_container">
             <img src="img/parakeet.jpg" alt='pic 4' class='v'>
-            <p class="image_caption">London, Kodak Gold 200</p>
+            <p class="image_caption">London, Kodak Gold 200<br><a href="#5">Next</a></p>
         </div>
         <br>
-        <div class="image_container">
+        <div id='5' class="image_container">
             <img src="img/griffith.jpg" alt='pic 5' class='h'>
-            <p class="image_caption">Los Angeles, Kodak Gold 200</p>
+            <p class="image_caption">Los Angeles, Kodak Gold 200<br>a href="#6">Next</a></p>
         </div>
         <br>
-        <div class="image_container">
+        <div id='6' class="image_container">
             <img src="img/kensington_roundabout.jpg" alt='pic 6' class='v'>
-            <p class="image_caption">London, Kodak Portra 400</p>
+            <p class="image_caption">London, Kodak Portra 400<br><a href="#7">Next</a></p>
         </div>
         <br>
-        <div class="image_container">
+        <div id='7' class="image_container">
             <img src="img/canal_bridge.jpg" alt='pic 7' class='v'>
-            <p class="image_caption">London, Ilford HP5 Plus</p>
+            <p class="image_caption">London, Ilford HP5 Plus<br><a href="#8">Next</a></p>
         </div>
         <br>
-        <div class="image_container">
+        <div id='8' class="image_container">
             <img src="img/windsurfer_evening.jpg" alt="pic 8" class='h'>
-            <p class="image_caption">Sardinia, Kodak Colorplus 200</p>
+            <p class="image_caption">Sardinia, Kodak Colorplus 200<br><a href="#final_container">Next</a></p>
         </div>
     </div>
-
-    <div>
+    
+    <div id="final_container">
+    <div id="final">
+    <div id="endtext"> 
         <p><em>Watch this space.</em><br><br>TIMUR</p>
     </div>
 
@@ -242,7 +266,8 @@
           </g>
         </svg>
     </div>
-
+</div>
+    </div>
     </body>
     
 </html>
