@@ -10,30 +10,27 @@
     <meta content='yes' name='apple-mobile-web-app-capable'/>
     <meta content='#eeeee4' name='apple-mobile-web-app-status-bar-style'/>
     <style> 
-        .image_container img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-height: calc(100vh - 150px);
-            padding: 50px 50px 25px 50px;
-            max-width: calc(100vw - 100px);
-        }
-
-        .image_container {
-            display: block;
-            margin-left:auto;
-            margin-right:auto;
-            height: 100vh;
-            width: auto;
+        #header {
+            /* margin: auto; */
+            font-family: 'Old Standard TT', serif;
+            text-align: center;
+            margin-block: 0px;
         }
 
         #heading {
-            margin: auto;
-            font-family: 'Old Standard TT', serif;
-            text-align: center;
-            padding: 100px 0px 100px 0px;
+            text-align: inherit;
             font-size: 64px;
+            padding: 100px 0px 0px 0px;
+            margin-block: inherit;
+        }
 
+        #subheading {
+            font-family: 'Old Standard TT', serif;
+            padding: 25px 0px 50px;
+            font-size: 20px;
+            text-align: inherit;
+            font-weight: normal;
+            margin-block: inherit;
         }
 
         #images {
@@ -64,6 +61,8 @@
             background-color: #eeeee4;
             font-family: 'Old Standard TT', serif;
             color: #505050;
+            font-size: 16px;
+
         }
 
         a {
@@ -92,13 +91,41 @@
             margin: auto;
             text-align: center;
         }
+        
+        ol {
+            display: table;
+            margin: 0 auto;
+        }
+        #main {
+            padding: 50px;
+        }
     </style>
 </head>
 
 <body>
-    <h1 id='heading'>INTERESTING<Eh1>
-        <div id="links"><a href="./photos.html">Photos</a></div>
-
+    <div id="header">
+        
+        <h1 id='heading'>INTERESTING</h1>
+        <h3 id='subheading'>Stuff I found interesting</h6>
+           
+        </div>
+    <div id="links">
+        <a href="./index.html">Home</a>
+        &nbsp;
+        <a href="./photos.html">Photos</a>
+        &nbsp;
+        <a href="./interesting.html">Interesting</a>
+    </div>
+    
+    <div id="main">
+        <ol>
+            <li><a href="https://waitbutwhy.com/2014/06/taming-mammoth-let-peoples-opinion-run-life.html">Taming the Mammoth: Why You Should Stop Caring What Other People Think</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/List_of_last_words">List of last words</a></li>
+            <li><a href="https://thispersondoesnotexist.com">This person does not exist</a></li>
+            <li><a href="https://thiscatdoesnotexist.com">Similalry for cats</li>
+            <li><a href="https://eternalbox.dev/jukebox_index.html">The Eternal Jukebox</a></li>
+        </ol>
+    </div>
     
     <div id="final_container">
     <div id="final">
